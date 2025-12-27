@@ -1,6 +1,5 @@
 package com.trywill.testrunner;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;

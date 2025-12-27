@@ -110,7 +110,7 @@ public class DriverUtility extends BaseClass {
 		driver.switchTo().frame(element);
 	}
 	
-	public void captureScreenshot(String fileName)
+	public String captureScreenshot(String fileName)
 	{
 		
 		String screenshotFolder=Constants.SCREENSHOT_DIR;
@@ -127,6 +127,8 @@ public class DriverUtility extends BaseClass {
 		{
 			e.printStackTrace();
 		}
+		
+		return screenshotTo.getAbsolutePath();
 	}
 	
 

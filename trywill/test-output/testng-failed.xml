@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.trywill.testrunner.OrangeHRM">
+      <class name="com.trywill.testrunner.SampleRun">
         <methods>
-          <include name="runTheCode"/>
           <include name="setup"/>
+          <include name="verifyPageTitle"/>
+          <include name="verifyPageUrl"/>
+          <include name="verifyAccount"/>
         </methods>
-      </class> <!-- com.trywill.testrunner.OrangeHRM -->
+      </class> <!-- com.trywill.testrunner.SampleRun -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -22,6 +22,7 @@ public class ReportsUtility {
 		spark.config().setTimeStampFormat("dd-MM-yyyy, hh:mm:ss- EEE");
 		
 		ExtentReports report=new ExtentReports();
+		
 		report.attachReporter(spark);
 		
 		return report;

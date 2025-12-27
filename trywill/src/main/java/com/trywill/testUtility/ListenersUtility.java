@@ -37,8 +37,9 @@ public class ListenersUtility implements ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println(methodName+" Method got failed....");
-		DriverUtility.getInstance().captureScreenshot(methodName);
-		test.log(Status.FAIL, "Test method got failed");
+		String screenshot = DriverUtility.getInstance().captureScreenshot(methodName);
+		test.log(Status.FAIL, "Test method got failed - "+result.getThrowable());
+		test.addScreenCaptureFromPath(screenshot, "Failed screenshot...");
 	}
 
 	@Override
